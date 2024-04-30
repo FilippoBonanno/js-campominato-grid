@@ -3,3 +3,4 @@ function squareCreate (quadrato) {
     square.classList.add("square");
     return square;
 }
+
