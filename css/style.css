@@ -10,6 +10,8 @@
     height: 80px;
     border: 1px solid red;
     color: white;
+    text-align: center;
+    line-height: 80px;
 }
 
 .active {
@@ -21,3 +23,7 @@
     margin: 0 auto;
     
 }
+ #button {
+    padding: 1rem;
+    
+ }
