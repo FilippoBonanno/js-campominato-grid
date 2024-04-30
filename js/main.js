@@ -3,8 +3,13 @@ let grid = document.getElementById ("grid");
 
 for (let i = 1; i <= 100; i++) {
     let quadrato = squareCreate(i);
-    quadrato.innerText = (i);
-    console.log (quadrato);
+
+    quadrato.addEventListener("click", function() {
+        quadrato.innerText = (i);
+        quadrato.classList.toggle("active");
+    });
+    
+
     grid.append(quadrato);
     
 }

@@ -12,6 +12,10 @@
     color: white;
 }
 
+.active {
+    background-color: red;
+}
+
 #grid {
     width: 800px;
     margin: 0 auto;
