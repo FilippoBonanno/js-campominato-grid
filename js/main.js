@@ -1,22 +1,27 @@
 // mi seleziono il container dove inserirò le celle
 let grid = document.getElementById ("grid");
 
-for (let i = 1; i <= 100; i++) {
-    let quadrato = squareCreate(i);
+let buttonClick = document.getElementById ("button");
 
-    quadrato.addEventListener("click", function() {
-        
-        quadrato.classList.toggle("active");
-
-        if (quadrato.classList.contains("active")) {
+buttonClick.addEventListener("click", function() {
+    
+    for (let i = 1; i <= 100; i++) {
+        let quadrato = squareCreate(i);
+    
+        quadrato.addEventListener("click", function() {
             
-            quadrato.innerText = (i);
-        } else {
-            quadrato.innerText = "";
-        }
-    });
+            quadrato.classList.toggle("active");
     
-    grid.append(quadrato);
-    
-}
+            if (quadrato.classList.contains("active")) {
+                
+                quadrato.innerText = (i);
+            } else {
+                quadrato.innerText = "";
+            }
+        });
+        
+        grid.append(quadrato);
+        
+    }
+  });
 
